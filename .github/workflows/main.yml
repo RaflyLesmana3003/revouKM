@@ -1,0 +1,17 @@
+name: pipeline main Branch Merge Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  echoMessage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Echo a message
+        run: echo "Code has been merged into the main branch!"
