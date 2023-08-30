@@ -1,0 +1,288 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ list-style: none;
+ font-family: 'poppins', sans-serif;
+ color: #495057;  
+}
+
+
+@media (min-width: 1200px) {
+  .responsive-example{
+    color: red;
+  }
+}
+
+@media (min-width: 900px) {
+  .responsive-example{
+    color: rgb(214, 238, 58);
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-example{
+    color: green;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.vertical-divider {
+ width: 1px;
+ height: 30px;
+ background-color: #000;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
+.container{
+ padding: 20px 100px;
+}
+
+.shadow{
+ box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.1);
+}
+
+.border-radius{
+ border-radius: 10px;
+}
+
+/* HEADER */
+.header{
+ height: 70px;
+ background-color: white;
+ color: white;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 10px auto;
+}
+
+.header a img {
+ width: 50px;
+}
+
+.menu a{
+ color: #fede3e;
+ font-weight: bold;
+ padding-left: 5px;
+ padding-right: 5px;
+}
+
+.menu a:hover{
+ color: #fbcd17;
+}
+.menu .icon{
+ color: #0e0e0e;
+}
+
+.menu {
+ display: flex;
+ align-items: center
+}
+
+.menu a {
+ position: relative;
+ padding: 10px;
+ text-decoration: none;
+}
+/* HEADER */
+
+.home {
+  width: 100%;
+  background:url("/public/image/background.png");
+  background-size: cover;
+  backdrop-filter: brightness(0) invert(1);
+}
+
+.portfolio{
+ width: 100%;
+ height: 100px;
+ background-color: white;
+}
+
+.home-content{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.home-content img{
+ width: 40%;
+ border-radius: 10px;
+}
+
+/* CARD */
+.card{
+ width: 40%;
+ padding: 20px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.card-header{
+  color: #fede3e !important;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.card-subheader{
+  color: #fede3e !important;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.card-contains{
+ padding-top: 5px;
+ padding-bottom: 5px;
+}
+
+.card-action{
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+/* CARD */
+
+.btn{
+ cursor: pointer;
+ background-color: #fede3e;
+ border: 0px;
+ height: 35px;
+ padding: 2px 20px;
+ border-radius: 50px !important;
+}
+
+.btn-outline{
+ border: 2px solid #fede3e;
+ background-color: transparent; 
+}
+
+.btn:hover{
+ background-color: #fbcd17;
+}
+
+.form-group{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group label{
+  font-weight: bold;
+}
+
+.form-group input,select{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.submit-btn{
+  padding: 10px;
+  background-color: #fbcd17;
+  border-color: transparent;
+  border-radius: 10px;
+  float: right;
+}
+
+table, th, td{
+  margin-top: 10px;
+  border: 0px;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: start;
+}
+
+th{
+  background-color: #fbcd17;
+}
+
+tr:nth-child(odd) {
+  background-color: #f7e496;
+}
+
+.flex-item{
+  width: 100%;
+  height: 50px;
+  background-color: rgb(232, 148, 148);
+}
+
+
+/* positioning */
+
+.box-container {
+  width: 300px;
+  height: 300px;
+  background-color: lightgray;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box-absolute {
+  position: absolute;
+  top: 60px;
+  left: 200px;
+  background-color: rgb(224, 216, 67);
+}
+
+.box-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(80, 255, 103);
+
+}
+
+.box-relative {
+  position: relative;
+  top: 20px;
+  left: 100px;
+  background-color: rgb(80, 124, 255);
+}
+
+.box-static {
+  position: static;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: rgb(194, 255, 80);
+}
+
+/* for desktop size */
+@media (max-width: 1200px) {
+  .responsive-text {
+    color: black;
+    font-size: 1rem;
+  }
+}
+
+/* for tablet size */
+@media (max-width: 768px) {
+  .responsive-text {
+    color: red;
+    font-size: 2rem;
+  }
+}
+
+/* for mobile size */
+@media (max-width: 480px) {
+  .responsive-text {
+    color: green;
+    font-size: 3rem;
+  }
+}

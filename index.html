@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portofolio | rafly lesmana</title>
+  <link rel="stylesheet" href="./public/style/global.css" div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <!-- Home -->
+  <section class="home container">
+    <!-- Header -->
+    <header class="header container shadow border-radius">
+      <a href="#" class="logo">
+        <img src="./public/image/logo.png">
+      </a>
+      <div>
+      <nav class="menu">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        
+        <span class="vertical-divider"></span>
+
+        <a class="icon" href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="icon" href="https://medium.com/"><i class="fa-brands fa-medium"></i></a>
+        <a class="icon" href="#"><i class="fa-brands fa-github"></i></a>
+      </nav>
+    </div>
+    </header>
+    <!-- Header -->
+
+    <div class="home-content">
+      <div class="card">
+        <h3>Hi, I'm </h3>
+        <h1 class="card-header">Rafly Lesmana 🙌🏻</h1>
+        <div class="card-contains">
+          <h3>From Section Jayapura</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="#"><button class="btn btn-display">📞 Contact me</button></a>
+          <a href="#"><button class="btn btn-outline">👩🏻‍💻 Download CV</button></a>
+        </div>
+      </div>
+      <img src="./public/image/kucing.jpg">
+    </div>
+  </section>
+  <!-- Home -->
+  <section>
+    <div class="container flex">
+      <div class="card">
+        <h1 class="card-subheader">Contact me ✅</h1>
+        <div class="card-contains">
+          <form action="./forminput.html" method="post">
+            <div class="form-group">
+              <label for="name">inputkan nama anda :</label><br>
+              <input id="name" name="name" type="text" placeholder="name" required oninvalid="this.setCustomValidity('siapa namamu!!🔥')"><br>
+            </div>
+  
+            <div class="form-group">
+              <label for="email">inputkan email anda :</label><br>
+              <input id="email" type="email" placeholder="email" name="email"><br>
+            </div>
+  
+            <div class="form-group">
+              <label for="password">inputkan pasword anda :</label><br>
+              <input id="password" type="password" placeholder="password" name="password" ><br>
+            </div>
+  
+            <div class="form-group">
+              <label for="age">inputkan umur anda anda :</label><br>
+              <input id="age" type="number" placeholder="age" min="12" max="20" name="age"><br>
+            </div>
+  
+            <div class="form-group">
+              <label for="phone">inputkan telefon anda anda :</label><br>
+              <input id="phone" type="tel" placeholder="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone"><br>
+              <span style="color: gray;">phone number using this requested format (08x-xxx-xxxx)</span><br>
+            </div>
+  
+            <div class="form-group">
+              <label for="email">pilih gender anda :</label><br>
+              <select id="gender" name="gender">
+                <option>laki-laki</option>
+                <option>perempuan</option>
+              </select>
+            </div>
+            <br>
+            <input class="submit-btn" type="submit" value="submit data">
+        </form>
+      </div>
+      </div>
+      <div class="card">
+        <h1 class="card-subheader">Favorite things 💬</h1>
+        <table class="table" border="1" cellspacing="0">
+          <tr>
+            <th>Number</th>
+            <th>Title</th>
+            <th>Rate</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>One piece ☠️</td>
+            <td>10/10</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Meme 😆</td>
+            <td>9/10</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Space 🪐</td>
+            <td>10/10</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Tech 👨🏽‍💻</td>
+            <td>9/10</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
